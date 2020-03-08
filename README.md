@@ -18,20 +18,22 @@
 可配置的有效参数如下:
 
 ```config
-LOGIN_TOKEN=token_id,token
-DOMAIN=domain.com
-SUB_DOMAIN=www
-INTERVAL=5
-EMAIL=you@email.com
-IP_COUNT=1
+login_token=token_id,token
+domain=domain.com
+sub_domain=www
+interval=5
+email=you@email.com
+ip_count=1
 ```
 
-* LOGIN_TOKEN : 必填, 在dnspod上申请的api组成的token,参考：https://support.dnspod.cn/Kb/showarticle/tsid/227/
-* DOMAIN : 必填, 在dnspod解析的域名
-* SUB_DOMAIN : 必填, 使用ddns的子域名
-* INTERVAL: 选填, 轮询检查的时间间隔, 单位秒， 默认为5, 建议不要小于5
-* EMAIL: 选填, 你的邮箱
-* IP_COUNT: 选填, 你服务器的出口IP数量，一般为1，填大了一般也没事（玩 OpenWrt 的可能会有多个IP）
+* login_token : 必填, 在dnspod上申请的api组成的token,参考：https://support.dnspod.cn/Kb/showarticle/tsid/227/
+* domain : 必填, 在dnspod解析的域名
+* sub_domain : 必填, 使用ddns的子域名
+* interval: 选填, 轮询检查的时间间隔, 单位秒， 默认为5, 建议不要小于5
+* email: 选填, 你的邮箱
+* ip_count: 选填, 你服务器的出口IP数量，一般为1，填大了一般也没事（玩 OpenWrt 的可能会有多个IP）   
+
+**注意：区分大小写**
 
 运行 `python ddns.py`
 
